@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val dice = Dice(6)
         val `dice-roll` = dice.roll()
         val result: ImageView = findViewById(R.id.imageView)
+        println(`dice-roll`)
 
         when (`dice-roll`){
             1 -> result.setImageResource(R.drawable.dice_1)
